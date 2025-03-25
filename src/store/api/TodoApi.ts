@@ -7,7 +7,10 @@ export const TodoApi = createApi({
     getTodos: builder.query({
       query: () => "todos", // "GET https://jsonplaceholder.typicode.com/todos"
     }),
+    getTodoById: builder.query({
+      query: (id) => `todos/${id}`, // "GET https://jsonplaceholder.typicode.com/todos/${id}"
+    }),
   }),
 });
 
-export const { useGetTodosQuery } = TodoApi;
+export const { useGetTodosQuery, useLazyGetTodoByIdQuery } = TodoApi;
