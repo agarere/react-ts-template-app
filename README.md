@@ -52,3 +52,14 @@ export default tseslint.config({
   },
 })
 ```
+
+```mermaid
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
+  flowchart TB
+    A --> B
+    A --> C   
+```
