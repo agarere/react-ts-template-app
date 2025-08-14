@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import FormPage from './pages/form/FormPage';
+import BuilderPage from './pages/builder/BuilderPage'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Nav.Link as={Link} to="/counter">Counter</Nav.Link>
               <Nav.Link as={Link} to="/todo-list">Todo List</Nav.Link>
               <Nav.Link as={Link} to="/form">Form</Nav.Link>
+              <Nav.Link as={Link} to="/builder">Builder</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -41,6 +43,10 @@ function App() {
           <Route
             path='/form'
             element={<FormPage />}
+          />
+          <Route
+            path='/builder'
+            element={<BuilderPage />}
           />
         </Routes>
       
